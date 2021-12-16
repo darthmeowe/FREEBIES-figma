@@ -55,8 +55,6 @@ table {
     font-weight: 400;
     font-size: 16px;
     color: #4F5665;
-
-    border: 4px solid red;
 }
 
 a{
@@ -65,8 +63,6 @@ a{
 }
 
 .header {
-    border: 2px solid red;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -93,6 +89,8 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+
+    cursor: pointer;
 }
 .btn-in {
     width: max-content;
@@ -102,6 +100,8 @@ a{
     border:none;
     color: #0B132A;
     font-weight: 500;
+
+    cursor: pointer;
 }
 
 
@@ -117,9 +117,6 @@ a{
     width: 555px;
 
     margin-right: 40px;
-
-    border: 2px solid blue;
-
 }
 
 .title {
@@ -128,8 +125,6 @@ a{
     line-height: 70px;
     color: #0B132A;
 
-    border: 2px solid blue;
-
     margin-bottom: 20px;
 }
 .discr {
@@ -137,14 +132,9 @@ a{
     line-height: 30px;
     font-size: 16px;
 
-    border: 2px solid blue;
-
     margin-bottom: 50px;
 }
 
-.main-features__img {
-    border: 2px solid blue;
-}
 .btn-features {
     width: 250px;
     height: 60px;
@@ -159,6 +149,8 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+
+    cursor: pointer;
 }
 .btn-features a {
     color: #ffffff;
@@ -169,7 +161,8 @@ a{
 
     height: 200px;
 
-    box-shadow: 0 10px 20px -5px;
+    background:#FFFFFF;
+    box-shadow: 0 10px 20px -10px #00000062;
     border-radius: 10px;
     justify-content:space-around;
 }
@@ -196,8 +189,6 @@ a{
 .main-features_features {
     margin-top: 96px;
     margin-bottom: 130px;
-
-    border: 2px solid green;
 }
 .title-features {
     font-size: 35px;
@@ -286,8 +277,6 @@ a{
     margin-right: auto;
 
     margin-bottom: 36px;
-
-    border: 2px solid black;
 }
 
 
@@ -303,62 +292,117 @@ a{
  /* sliders */
 .sliders {
     height: 590px;
+    margin-bottom: 105px;
 }
 .sliders-main {
     width: 2000px;
     height: 300px;
-    margin-bottom: 105px;
 
-    background-color: rgb(218, 134, 134);
+    background-color: rgb(134, 215, 218);
 }
 /* end */
-
-.sub {
-    height: 233px;
-
-    border: 2px solid blue;
-    
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.sub-discr {
-    width: 410px;
-    height: 115px;
-    margin-bottom: 105px;
-
-    border: 2px solid blue;
-}
-
-
-
 
 footer {
     width: 100%;
 
     background: linear-gradient(to bottom, #F8F8F8, #f8f8f800) ;
+    position: relative;
 }
-.footer {
-    border: 2px solid green;
 
+.sub {
+    width: 1140px;
+    height: 233px;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sub-discr {
+    width: 410px;
+    height: 115px;
+}
+
+.footer {
     height: 640px;
 }
 .main-footer {
+    margin-top: 60px;
+    padding-top: 255px;
     display: flex;
     justify-content: space-between;
 }
+
+
 .follow {
     width: 340px;
     height: 62px;
+}
+.follow .logo{
+    margin-bottom: 20px;
+}
+.follow .discr {
+    margin-bottom: 30px;
 }
 .follow-me {
     width: 142px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 
-.img img {
-    border: 2px solid red;
+.copyright {
+    color: #AFB5C0;
+}
 
+.nav-footer li {
+    font-size: 16px;
+    line-height: 30px;
+}
+.nav-footer li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-nav_title {
+    font-weight: 500;
+    color:#0B132A;
+    margin-bottom: 20px;
+}
+
+
+/* hover */
+
+.btn-features:hover {
+    background-color: #FF6955;
+    border: 2px solid #FF6955;
+    box-shadow: 0 10px 30px 0 #F53855;
+    transition: 0.3s;
+}
+.btn-o:hover {
+    background-color: #F53838;
+    color: white;
+    transition: 0.2s;
+}
+
+.choose-plans_plan:hover {
+    border: 2px solid #F53855;
+    transition: 0.5s;
+}
+
+.choose-plans_plan:hover .img-box {
+    transform: translateY(-20px);
+    transition: 0.5s linear;
+}
+.choose-plans_plan:hover .discr-plan {
+    transform: translateY(20px);
+    transition: 0.5s linear;
+}
+.choose-plans_plan:hover .features-items {
+    margin-bottom: 20px;
+    transition: 0.5s linear;
 }
