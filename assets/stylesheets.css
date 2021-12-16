@@ -152,6 +152,8 @@ a{
     border: 2px solid #F53855;
     border-radius: 10px;
     background-color: #F53855;
+    box-shadow: 0 10px 20px -5px #F53855;
+
     font-weight: 700;
 
     display: flex;
@@ -227,7 +229,7 @@ a{
 .plan {
     width: 100%;
 
-    background-color: #F6F6F6;
+    background: linear-gradient(to bottom, #F8F8F8, #f8f8f800) ;
 }
 
 .titles-plans {
@@ -286,4 +288,77 @@ a{
     margin-bottom: 36px;
 
     border: 2px solid black;
+}
+
+
+.partners {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 50px;
+}
+
+
+ /* sliders */
+.sliders {
+    height: 590px;
+}
+.sliders-main {
+    width: 2000px;
+    height: 300px;
+    margin-bottom: 105px;
+
+    background-color: rgb(218, 134, 134);
+}
+/* end */
+
+.sub {
+    height: 233px;
+
+    border: 2px solid blue;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sub-discr {
+    width: 410px;
+    height: 115px;
+    margin-bottom: 105px;
+
+    border: 2px solid blue;
+}
+
+
+
+
+footer {
+    width: 100%;
+
+    background: linear-gradient(to bottom, #F8F8F8, #f8f8f800) ;
+}
+.footer {
+    border: 2px solid green;
+
+    height: 640px;
+}
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+}
+.follow {
+    width: 340px;
+    height: 62px;
+}
+.follow-me {
+    width: 142px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img img {
+    border: 2px solid red;
+
 }
